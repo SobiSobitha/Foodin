@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --primary-color: #A82C4B;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Robot', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--white-color);
+}
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    background: var(--white-color);
+}
+section{
+    padding: 200px 100px;
+}
+.logo img{
+    width: 100px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 20px 20px ;
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.navbar a:hover{
+    cursor: pointer;
+}
+.navbar a:active{
+    color: var(--black-color);
+}
+.navbar .btn{
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--white-color);
+    height: 10%;
+}
+.navbar .btn a:hover{
+    color: var(--primary-color);
+}
+#menu-icon{
+    color: var(--secondary-color);
+    font-size: 24px;
+    z-index: 10000;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: url('/UkiCohort10-FoodIn-main/bg/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-size: 3.4rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-text p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0.5rem 0 1.4rem;
+}
+.home-text .btn{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: var(--primary-color);
+    font-weight: 500;
+}
+
+.home-text .btn1{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: var(--white-color);
+    color: var(--black-color);
+    font-weight: 500;
+}
+.rating{
+    display: grid;
+    padding: 50px 50px;
+}
+.rate{
+    display: grid;
+    padding:50px;
+}
+.about{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    gap: 2.5rem;
+}
+.about-img img{
+    border-radius: 6.7rem;
+}
+.about-text h2{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+.about-text p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.1rem;
+    color: var(--text-gray);
+}
+.about-text .btn{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.text3 {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  padding: 2rem;
+}
+.rating{
+  background: var(--primary-color);
+  color: var(--white-color);
+  width: 100%;
+  padding: 2rem;
+}
+.rating .rate{
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+  }
+  .centered p{
+    color: var(--text-color);
+    font-size: 0.9995rem;
+  }
+  .centered .btn{
+    background: var(--primary-color);
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    align-items: center;
+  }
+  .desc h5{
+    color: var(--black-color);
+  }
+  .desc p{
+    color: var(--text-color);
+  }
+  .desc h3{
+    color: var(--primary-color);
+  }
+  .desc h4{
+    color: var(--text-color);
+    text-decoration-line: line-through;
+  }
+  .desc .btn{
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
+  .main{
+    background-image: url('/UkiCohort10-FoodIn-main/bg/bg-3.jpg') ;
+    height: 200px;
+    background-size: cover;
+    
+}
+.para{
+    color: var(--white-color);
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+}
+.btn{
+    background: var(--primary-color);
+    align-items: end;
+    text-align: right;
+}
+.off{
+    text-align: center;
+}
+.row .btn{
+  background: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+
+}
+  footer {
+    background-color: #8A2B2B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    margin: 0 5px;
+}
+
+footer .social-media img {
+    height: 20px;
+}
